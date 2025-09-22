@@ -31,15 +31,25 @@ if __name__ == "__main__":
     print(f"Solde initial:  {solde} $")
     print("*************************")
 
-    retrait_1 = float(input("Retrait 1: Combien voulez-vous retirer? "))
-    solde = retrait(solde, retrait_1)
+    retrait1 = float(input("Retrait : Combien voulez-vous retirer? "))
+    solde = retrait(solde, retrait1)
+    ajouter = input("Voulez-vous effectuer un autre retrait? (oui/non)")
+    while ajouter == "oui":
+        float(input("Retrait : Combien voulez-vous retirer? "))
+        break
+    else:
+        print("Vous n'avez plus de retraits à faire")
 
-    retrait_2 = float(input("Retrait 2: Combien voulez-vous retirer? "))
-    solde = retrait(solde, retrait_2)
 
-    print("*********************")
-    print(f"Solde initial: {MONTANT_INITIAL} $")
-    print(f"Retrait 1:     {retrait_1} $")
-    print(f"Retrait 2:     {retrait_2} $")
-    print(f"Solde final:   {solde} $")
-    print("*********************")
+
+
+    #retrait_2 = float(input("Retrait 2: Combien voulez-vous retirer? "))
+    #solde = retrait(solde, retrait_2)
+
+        print("*********************")
+        print(f"Solde initial: {MONTANT_INITIAL} $")
+        print(f"Retrait 1:     {retrait1} $")
+        #print(f"Retrait 2:    {retrait_2} $")
+        print(f"Solde final:   {solde} $")
+        print("*********************")
+
