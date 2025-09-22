@@ -43,10 +43,11 @@ if __name__ == "__main__":
 
 
 
+
     #retrait_2 = float(input("Retrait 2: Combien voulez-vous retirer? "))
     #solde = retrait(solde, retrait_2)
 
-        print("*********************")
+        print("**********************")
         print(f"Solde initial: {MONTANT_INITIAL} $")
         print(f"Retrait 1:     {retrait1} $")
         #print(f"Retrait 2:    {retrait_2} $")
